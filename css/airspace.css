@@ -74,6 +74,8 @@ header .navbar {
 }
 header .navbar-brand {
   padding-top: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 header .navbar-brand img {
   width: 50%;
