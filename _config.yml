@@ -15,8 +15,8 @@ keep_files:
 google_analytics: UA-141412571-1
 
 # Site settings
-title: FUNSD
-subtitle: "FUNSD dataset webpage"
+title: HEST-1k
+subtitle: "HEST-1k dataset webpage"
 url: "https://guillaumejaume.github.io" # the base hostname & protocol for your site
 # baseurl: "/the/subpath/of/your/site" # Set this value to "" if you want your site to be root
 baseurl: "/"
