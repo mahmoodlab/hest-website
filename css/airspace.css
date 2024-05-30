@@ -80,6 +80,7 @@ header .navbar-brand img {
 }
 
 .padded-navbar-brand {
+  width: 50%;
   padding-top: 10px;
 }
 
