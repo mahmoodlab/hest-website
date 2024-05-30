@@ -4,6 +4,10 @@
  *
  */
 
+ .container {
+  width: 1270px;
+ }
+
  .italic {
    font-style: italic;
  }
