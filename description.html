@@ -1,0 +1,76 @@
+---
+layout: page
+title: Description
+permalink: /description/
+---
+
+<!-- Slider Start -->
+<section id="global-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="block">
+                    <h1>Dataset Description and Evaluation</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="description">
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+    <h1> Dataset format </h1>
+                <div class="block">
+                            <p> All the annotations are encoded in a JSON file. An example showing the annotations for the image below is presented.
+                                A detailed description of each entry from the JSON file is provided in the original paper. </p>
+          <img src="../img/semantic_entity_example.png" alt="Img" width="70%" height="70%">
+        </div>
+        <body>
+    <pre>
+        {
+        "form": [
+        {
+            "id": 0,
+            "text": "Registration No.",
+            "box": [94,169,191,186],
+            "linking": [
+                [0,1]
+            ],
+            "label": "question",
+            "words": [
+                {
+                    "text": "Registration",
+                    "box": [94,169,168,186]
+                },
+                {
+                    "text": "No.",
+                    "box": [170,169,191,183]
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "text": "533",
+            "box": [209,169,236,182],
+            "label": "answer",
+            "words": [
+                {
+                    "box": [209,169,236,182
+                    ],
+                    "text": "533"
+                }
+            ],
+            "linking": [
+                [0,1]
+            ]
+        }
+    ]
+    }
+    </pre>
+</body>
+    </div>
+  </div>
+</div>
+</section>
