@@ -23,51 +23,53 @@ permalink: /description/
     <div class="col-md-12">
     <h1> Dataset format </h1>
                 <div class="block">
-                            <p> All the annotations are encoded in a JSON file. An example showing the annotations for the image below is presented.
-                                A detailed description of each entry from the JSON file is provided in the original paper. </p>
-          <img src="../img/semantic_entity_example.png" alt="Img" width="70%" height="70%">
+                    <p> 
+                        For every sample, we provide:
+                        - The aligned Spatial Transcriptomics data in a standard ScanPy .h5ad file
+                        - A H&E WSI in pyramidal generic TIFF
+                        - CellViT nuclei segmentation
+                        - WSI patches
+                        - A JSON file containing metadatas for that sample
+                        
+                        An example showing the metadatas for a HEST sample is given below.
+                        A more detailed description of each sample is provided in the original paper. </p>
+
+                                
+        <img src="../img/format.png" alt="Img" width="100%" height="100%">
         </div>
         <body>
     <pre>
         {
-        "form": [
-        {
-            "id": 0,
-            "text": "Registration No.",
-            "box": [94,169,191,186],
-            "linking": [
-                [0,1]
-            ],
-            "label": "question",
-            "words": [
-                {
-                    "text": "Registration",
-                    "box": [94,169,168,186]
-                },
-                {
-                    "text": "No.",
-                    "box": [170,169,191,183]
-                }
-            ]
-        },
-        {
-            "id": 1,
-            "text": "533",
-            "box": [209,169,236,182],
-            "label": "answer",
-            "words": [
-                {
-                    "box": [209,169,236,182
-                    ],
-                    "text": "533"
-                }
-            ],
-            "linking": [
-                [0,1]
-            ]
+            "dataset_title": "FFPE Human Ovarian Cancer Data with Human Immuno-Oncology Profiling Panel and Custom Add-on",
+            "id": "TENX142",
+            "image_filename",
+            "organ",
+            "disease_state",
+            "oncotree_code",
+            "species",
+            "patient",
+            "st_technology",
+            "data_publication_data",
+            "license",
+            "study_link",
+            "download_page_link1",
+            "inter_spot_dist",
+            "spot_diameter",
+            "spots_under_tissue",
+            "nb_genes",
+            "treatment_comment",
+            "pixel_size_um_embedded": null,
+            "pixel_size_um_estimated": 0.4559269200421818,
+            "fullres_height": 17064,
+            "fullres_width": 16800,
+            "spots_under_tissue": 2524,
+            "spot_estimate_dist": 6,
+            "spot_diameter": 55.0,
+            "inter_spot_dist": 100.0,
+            "adata_nb_col": 33538,
+            "fullres_px_width": 16800,
+            "fullres_px_height": 17064
         }
-    ]
-    }
     </pre>
 </body>
     </div>
