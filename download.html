@@ -3,15 +3,8 @@ layout: page
 title: Download
 permalink: /download/
 ---
-
-| Food    | Description                           | Category | Sample type |
-| ------- | ------------------------------------- | -------- | ----------- |
-| Apples  | A small, somewhat round ...           | Fruit    | Fuji        |
-| Bananas | A long and curved, often-yellow ...   | Fruit    | Snow        |
-| Kiwis   | A small, hairy-skinned sweet ...      | Fruit    | Golden      |
-| Oranges | A spherical, orange-colored sweet ... | Fruit    | Navel       |
-
-    <!-- Slider Start -->
+   
+<!-- Slider Start -->
 <section id="global-header">
     <div class="container">
         <div class="row">
@@ -23,6 +16,7 @@ permalink: /download/
         </div>
     </div>
 </section>
+
 
 
 <!-- Wrapper Start -->
@@ -40,3 +34,31 @@ permalink: /download/
   </div>
 </section>
 
+<div class="table-container">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/css/foundation.min.css">
+<table id="dataTable">
+  <thead>
+      <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+      </tr>
+  </thead>
+  <tbody>
+      <!-- Add more rows here -->
+  </tbody>
+</table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+<script>
+  $(document).ready(function() {
+      $('#dataTable').DataTable({
+          paging: true, // Enable pagination
+          searching: true, // Enable search
+          pageLength: 3, // Set number of rows per page
+          lengthMenu: [3, 5, 10], // Options for rows per page dropdown
+      });
+  });
+</script>

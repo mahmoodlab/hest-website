@@ -145,6 +145,7 @@ font header .navbar-default .navbar-nav li a:hover {
   font-weight: 300;
   letter-spacing: 3px;
 }
+
 /*--
 	wrapper Start
 --*/
@@ -242,7 +243,7 @@ font header .navbar-default .navbar-nav li a:hover {
 	Feature Start
 --*/
 #feature {
-  background: url("../img/hest_diag.png");
+  background: url("../img/hest_diag.jpg");
   background-position: 50% 94px;
   width: 100%;
   display: block;

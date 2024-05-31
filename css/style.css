@@ -4,6 +4,11 @@
  *
  */
 
+ .table-container {
+  padding-left: 10%;
+  padding-right: 10%;
+ }
+
  .container {
   width: 1270px;
  }
